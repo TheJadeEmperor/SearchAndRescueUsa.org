@@ -1,0 +1,104 @@
+.surgeon-generals-letter {
+    max-width: 100%;
+    background: #ff8000;
+    font-family: $font-sans;
+    font-size: 18px;
+    padding-top: 46px;
+    @include breakpoint("mobile"){
+        padding-top: 26px;
+    }
+    h1 {
+        font-size: 38px;
+        color: White;
+        text-align: center;
+        font-family: $font-sans-condensed;
+        margin-bottom: 30px;
+        margin-top: 0;
+        @include breakpoint("mobile"){
+            font-size:24px;
+            line-height:26px;
+            margin-bottom: 26px;
+        }
+    }
+    .letter-content {
+        text-align: left;
+        position: relative;
+        background: White;
+        color: #444444;
+        border-top: 5px solid #dedddd;
+        border-left: 5px solid #dedddd;
+        font-style: italic;
+        padding: 46px 190px 30px 54px;
+        margin-left: 16px;
+        margin-right: 16px;
+        @include breakpoint("mobile") {
+            font-size: 16px;
+            line-height: 18px;
+            border-top: 3px solid #dedddd;
+            border-left: 3px solid #dedddd;
+            padding: 37px 26px 42px 24px;
+        }
+        &::after {
+            position: absolute;
+            top: -5px;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-top: 136px solid #ff8000;
+            border-left: 146px solid transparent;
+            content: '';
+            @include breakpoint("mobile") {
+                border-top: 66px solid #ff8000;
+                border-left: 61px solid transparent;
+            }
+        }
+        &::before {
+            position: absolute;
+            top: 3px;
+            right: -1px;
+            width: 0;
+            height: 0;
+            border-bottom: 129px solid #dedddd;
+            border-right: 139px solid transparent;
+            content: '';
+            @include breakpoint("mobile") {
+                border-bottom: 66px solid #dedddd;
+                border-right: 62px solid transparent;
+                top:-3px;
+                right:-1px;
+            }
+        }
+    }
+    .letter-content h2 {
+        color: #2670aa;
+        font-size: 24px;
+        font-style: normal;
+        font-family: $font-sans-condensed;
+        margin-top:0;
+        @include breakpoint("mobile") {
+            font-size: 19px;
+            line-height: 18px;
+            margin-bottom:30px;
+        }
+    }
+    .letter-link {
+        color: #41b6e6;
+        font-family: $font-sans-condensed;
+        text-transform: uppercase;
+        font-style: normal;
+        margin-top:26px;
+        font-size:20px;
+        display:inline-block;
+        @include breakpoint("mobile") {
+            margin-top:52px;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+        img {
+            border: none;
+            margin-bottom: -1px;
+            vertical-align: baseline;
+        }
+    }
+}

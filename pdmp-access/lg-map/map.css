@@ -1,0 +1,102 @@
+/* ------ map
+-----------------------------------------------*/
+
+.lg-map-wrapper {
+  position:relative;
+  margin:0 auto;
+}
+
+.lg-map-wrapper #lg-map {
+  float:left;
+  clear:both;
+}
+
+.lg-map-wrapper .lg-map-text {
+  float:left;
+  width:500px;
+  height: 380px;
+  overflow: auto;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+}
+
+
+.lg-map-wrapper .lg-map-text img {
+  float: left;
+  padding-right: 5px;
+  padding-top: 2px;
+}
+
+.lg-map-wrapper .lg-map-text ul{
+  margin-left: 30px;
+}
+
+.tooltipmap
+{
+  position: fixed;
+  font-family: "Open Sans Condensed", sans-serif;
+  min-width: 175px;
+  min-height: 70px;
+  padding: 10px;
+  Font-Size: 20px;
+  background: #00aeef;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: #fff solid 3px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.tooltipmap:after
+{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 15px 0;
+  border-color: #00aeef transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -15px;
+  left: 73px;
+}
+
+.tooltipmap:before
+{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 17px 17px 0;
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  bottom: -20px;
+  left: 71px;
+}
+
+.tooltipmap i
+{
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.tooltipmap span
+{
+  text-transform: none;
+}
+
+.mouse-position{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+}
+
+

@@ -1,0 +1,43 @@
+$font-sans-condensed: 'Open Sans Condensed', sans-serif;
+$font-sans: 'Open Sans', sans-serif;;
+$font-arial: Arial,Helvetica Neue,Helvetica,sans-serif;
+
+$color-site-background: #F3F3F2;
+$color-header-background: #FFF;
+$color-orange: #FF8000;
+$color-blue: #1B365A;
+$max-site-width: 1200px;
+
+@mixin breakpoint($point) {
+
+
+
+  @if $point == mobile_mini {
+    @media  screen and (max-width : 639px) { @content; }
+  }
+
+  @if $point == mobile {
+    @media  screen and (max-width : 767px) { @content; }
+  }
+
+  @if $point == desktop {
+    @media  screen and (min-width : 768px) { @content; }
+  }
+
+  @if $point == desktop_bootstrap {
+    @media  screen and (min-width : 992px) { @content; }
+  }
+
+  @if $point == mobile_bootstrap {
+    @media  screen and (max-width : 991px) { @content; }
+  }
+
+  @if $point == desktop_mini {
+    @media  screen and (min-width : 768px) and (max-width : 1024px) { @content; }
+  }
+
+  @if $point == desktop_max {
+    @media  screen and (min-width : $max-site-width)  { @content; }
+  }
+
+}

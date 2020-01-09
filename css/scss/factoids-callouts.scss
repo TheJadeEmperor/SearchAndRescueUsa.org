@@ -1,0 +1,427 @@
+
+
+
+
+.factoid-americans, .factoid-pills, .factoid-world, .factoid-prescription {
+
+  margin-bottom: 20px;
+  padding: 0 30px;
+
+
+  @include breakpoint("mobile") {
+    height: auto !important;
+    padding: 30px 0 0 0;
+   //background-color: red !important;
+  }
+
+  div {
+    position: relative;
+    height: 100%;
+
+    @include breakpoint("mobile") {
+      text-align: center;
+    }
+
+
+
+  }
+
+  sup {
+    font-size: 50%;
+    top: -0.9em;
+
+
+
+  }
+
+
+
+
+
+  .img-responsive {
+    margin: auto;
+  }
+
+  .share {
+    width: 60px;
+
+    @include breakpoint("desktop_bootstrap"){
+      margin-right: 15px;
+    }
+
+  }
+
+  .texts {
+    text-align: center;
+    height: 100%;
+
+    @include breakpoint("mobile") {
+      padding-top: 30px;
+    }
+  }
+
+  .text {
+    Color: #2670AA;
+    text-Transform: Uppercase;
+    font-Size: 46px;
+    font-size: 4.3vh;
+    line-height: 54px;
+    line-height: 5.8vh;
+
+    font-family: $font-sans-condensed;
+
+
+    @include breakpoint("mobile_bootstrap") {
+      font-Size: 37px;
+      line-height: 40px;
+
+    }
+
+
+    @include breakpoint("desktop") {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+  }
+
+  .subtext {
+    Font-Family: $font-arial;
+    Color: #444444;
+    font-style: italic;
+    Font-Size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 18px;
+
+
+    max-width: 500px;
+    margin: auto;
+    //background-color: yellow !important;
+    //background-color: yellow !important;
+
+    @include breakpoint("desktop_mini") {
+      max-width: 400px;
+      margin: auto;
+     //background-color: red !important;
+    }
+
+
+
+
+    @include breakpoint("mobile") {
+      padding-top: 30px;
+      position: relative;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+
+  }
+
+
+
+}
+
+
+
+
+
+
+.factoid-americans {
+  //background: url("../img/factoids/Factoid1-desktop.png") no-repeat scroll center top;
+  //background-size: 100% auto;
+  height: 260px;
+  background-color: #1B265A;
+
+  @include breakpoint("mobile") {
+    height: auto !important;
+    padding: 30px 0 0 0;
+  }
+
+
+  .text {
+    Color: #2670AA;
+    padding: 0px 10px;
+    width: 100%;
+    span {
+      Color: #FF8000;
+    }
+  }
+
+  .subtext {
+    Color: #fff; // #444444;
+  }
+
+}
+
+
+.factoid-pills {
+  // background: url("../img/factoids/Factoid 2.png") no-repeat scroll center top;
+  // background-size: 100% auto;
+  height: 332px;
+  background-color: #FF8000;
+
+
+
+  .text {
+    Color: #2670AA;
+
+
+
+
+    span {
+      Color: #fff; // #FF8000;
+    }
+  }
+  .subtext {
+    Color: #fff; // #FF8000;
+  }
+
+}
+
+
+.factoid-world {
+  //  background: url("../img/factoids/Factoid 1.png") no-repeat scroll center top;
+  // background-size: 100% auto;
+  height: 410px;
+  background-color: #444;
+
+
+  .text {
+    Color: #2670AA;
+
+
+
+    span {
+      Color: #fff; // #FF8000;
+    }
+  }
+  .subtext {
+    Color: #fff; // #FF8000;
+  }
+
+}
+
+
+
+
+.factoid-prescription {
+  //  background: url("../img/factoids/Factoid 1.png") no-repeat scroll center top;
+  // background-size: 100% auto;
+  height: 350px;
+  background-color: #444;
+
+  @include breakpoint("desktop_mini") {
+    height: 320px;
+  }
+
+  .text {
+    Color: #2670AA;
+
+
+
+    span {
+      Color: #fff; // #FF8000;
+    }
+  }
+  .subtext {
+    Color: #fff; // #FF8000;
+  }
+
+}
+
+
+.callout {
+  border: 1px solid #DEDDDD;
+  Background-color: #FFFFFF;
+  margin-bottom: 20px;
+  position: relative;
+
+  &.callout-xsmall {
+    @include breakpoint("desktop_bootstrap") {
+      height: 430px;
+      //background-color: palevioletred;
+    }
+  }
+
+  &.callout-small {
+    @include breakpoint("desktop_bootstrap") {
+      height: 450px;
+      //background-color: greenyellow;
+    }
+  }
+
+  &.callout-med {
+    @include breakpoint("desktop_bootstrap") {
+      height: 500px;
+      //background-color: yellow;
+    }
+  }
+
+  &.callout-large {
+    @include breakpoint("desktop_bootstrap") {
+      height: 550px;
+      //background-color: red;
+    }
+  }
+
+  &.callout-pdmp {
+
+    text-align: left;
+    @include breakpoint("desktop_bootstrap") {
+      height: 403px;
+      //background-color: yellow;
+    }
+
+    .video-container {
+      padding-bottom: 46.25%;
+    }
+
+    p {
+      padding: 15px;
+      margin: 0;
+      display: block;
+      height: 60px;
+
+      @media screen and (max-width: 340px ) {
+        padding: 8px 15px;
+        width: 230px;
+      }
+
+    }
+  }
+
+
+
+.video-link {
+  position: relative;
+  padding: 0;
+  display: initial;
+}
+
+  .header {
+    Font-family: $font-sans-condensed;
+    font-weight: bold;
+    Color: #2670AA;
+    Font-size: 24px;
+    min-height: 70px;
+    margin-top: 15px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+
+  p {
+    Font-family: $font-arial;
+    Color: #444;
+    Font-size: 17px;
+    padding: 0 15px;
+
+    span {
+      white-space: nowrap;
+      //background-color: yellow;
+    }
+
+  }
+
+  .content {
+    // min-height: 180px;
+  }
+
+  & > a {
+    Font-family: $font-sans-condensed;
+    font-weight: bold;
+    Font-Size: 20px;
+    Color: #40b6e5;
+    Text-Transform: Uppercase;
+    padding: 15px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 40px);
+
+    @include breakpoint("mobile_bootstrap") {
+      position: relative;
+    }
+
+
+
+
+    &.video-callout {
+      position: relative;
+      padding: 0;
+      display: block;
+      width: initial;
+    }
+
+    span {
+
+      white-space: nowrap;
+
+      @include breakpoint("mobile") {
+       white-space: nowrap;
+      }
+    }
+
+
+    &:hover {
+      color: #40b6e5;
+    }
+
+    i {
+      color: $color-orange;
+      padding-left: 10px;
+    }
+  }
+
+}
+
+
+.full-width-callout {
+  padding: 30px 0;
+
+  &.first {
+    padding: 0 0 30px 0;
+  }
+
+  p {
+    Font-family: $font-sans-condensed;
+    Color: #FF8000;
+    Font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .reference {
+    Font-family: $font-arial;
+    Font-Size: 12px;
+    color: #444444;
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    word-wrap: break-word;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+}
+

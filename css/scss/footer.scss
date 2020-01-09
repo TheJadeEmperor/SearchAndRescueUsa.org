@@ -1,0 +1,61 @@
+footer {
+  background-color: #FFFFFF;
+  font-family: $font-arial;
+  color: #2670AA;
+  Border-top: 5px solid #444;
+  Font-Size: 14px;
+  padding: 55px 0;
+
+  a {
+
+    font-Size: 16px;
+    color: #40b6e5 !important;
+    padding-right: 30px;
+    font-family: $font-arial;
+
+    @include breakpoint("mobile"){
+      font-Size: 14px;
+      display: block;
+      padding-bottom: 17px;
+
+    }
+
+    &:hover {
+      color: #40b6e5 !important;
+    }
+
+    i {
+      color: #444444;
+    }
+
+  }
+
+
+  .legal {
+    Font-Family: $font-arial;
+    Color: #444444;
+    Font-Size: 14px;
+    padding-right: 50px;
+    padding-top: 20px;
+    display: inline-block;
+
+
+    @include breakpoint("mobile") {
+      padding-top: 0px;
+      padding-bottom: 10px;
+    }
+
+
+  }
+
+  span {
+
+    @include breakpoint("mobile") {
+      display: block;
+    }
+
+
+  }
+
+}
+

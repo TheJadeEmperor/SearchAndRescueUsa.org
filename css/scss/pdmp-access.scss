@@ -1,0 +1,66 @@
+.map-container {
+  width: 960px;
+  margin:20px auto;
+
+}
+
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+  .map-container {
+    width: 720px;
+
+  }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
+  .map-container {
+    width: 668px;
+
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .map-container {
+    display: none;
+  }
+}
+
+
+
+
+  @media only screen and (min-width: 769px) {
+    .map-container-mobile {
+      display: none;
+    }
+  }
+
+
+
+.state-select {
+  max-width: 80%;
+  margin: auto;
+  text-transform: uppercase;
+  font-family: $font-sans-condensed;
+}
+
+
+#statelist {
+  //color: red;
+
+}
+
+
+.selectize-input {
+  border-radius: 0 !important;
+  background: #fff url("../img/pdmp-access/dropdown-border.png") no-repeat right !important;
+}
+
+
+.map-container-mobile img {
+  max-width: 85%;
+  margin: auto;
+  display: block;
+}

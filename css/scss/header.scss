@@ -1,0 +1,407 @@
+
+header {
+  .container{
+    padding: 0;
+    .navbar-collapse{
+      padding: 0;
+      width: 100%;
+      margin: 0;
+      @include breakpoint("mobile") {
+        -webkit-box-shadow: 0px 2px 5px 0px rgba(46, 46, 46, 0.36);
+        -moz-box-shadow: 0px 2px 5px 0px rgba(46, 46, 46, 0.36);
+        box-shadow: 0px 2px 5px 0px rgba(46, 46, 46, 0.36);
+      }
+    }
+    .navbar-header{
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      @include breakpoint("mobile") {
+        min-height: 59px;
+        border-bottom: 2px solid #ccc;
+      } 
+    } 
+  }
+  @include breakpoint("mobile") {
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    background: #FFFFFF;
+    z-index: 999;
+  }
+}
+
+.navbar-toggle{
+  position:  absolute;
+  right: 0;
+  top:  0;
+  margin: 0;
+  background: #1B365A;
+  border-radius: 0;
+  color: #fff;
+  width: 58px;
+  height: 58px;
+}
+
+#menu {
+
+
+  font-family: $font-sans-condensed;
+  color: #2670AA;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  clear: both;
+  margin-top: 50px;
+
+  li {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    span{
+      display: none;
+    }
+
+    a {
+
+      text-decoration: none;
+
+      i{
+        color: inherit;
+      }
+
+      i[class*="fa-angle-right"]{
+        font-weight: bold;
+      }
+
+
+      &:hover, &:focus {
+        background-color: $color-header-background !important;
+      }
+    }
+
+    .active {
+      color: #1B365A;
+      border-bottom: 3px solid #ff8000;
+    }
+  }
+}
+
+.pdfk-link {
+  color: #444444;
+  font-family: $font-arial;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 16px;
+  a{
+    clear: both;
+    color: #7f7f83;
+  }
+}
+
+.pdfk-link-mobile {
+  font-family: $font-arial;
+  font-weight: normal;
+}
+
+.hero {
+  background: url("../img/home/Campaign_Image.png") no-repeat scroll center top;
+  height: 475px;
+
+
+
+  @include breakpoint("desktop_mini") {
+    background-position: -750px top;
+  }
+
+
+  @include breakpoint("mobile") {
+    //background: url("../img/home/Campaign_Image-mobile.png") no-repeat scroll center top;
+display: none;
+  }
+
+  .hero-container {
+    position: relative;
+    height: 100%;
+
+    @include breakpoint("mobile") {
+      display: none;
+    }
+  }
+
+  .hero-text {
+    max-width: 550px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  .hero-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #fff;
+    font-size: 46px;
+    line-height: 50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    text-transform: uppercase;
+  }
+
+  .cta-button {
+    background-color: #40b6e5;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    text-Transform: Uppercase;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+
+
+
+    @media screen and (min-width: 900px) {
+      .no-wrap {
+        display: inline-block;
+      }
+    }
+
+
+    &:hover {
+      background-color: $color-blue;
+    }
+
+    i {
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+}
+
+
+
+
+.navbar {
+  background-color: #fff;
+  margin-bottom: 0;
+  border: none;
+
+  @include breakpoint("desktop") {
+    padding-bottom: 20px;
+  }
+
+}
+
+@include breakpoint("mobile") {
+  .navbar{
+    background-color: #FFFFFF;
+    margin-bottom: 0;
+   
+  }
+  .navbar-brand{
+    width: 80%;
+    height: auto;
+    padding: 10px 0 0 15px;
+
+    img{
+      width: 220px;
+    }
+  }
+  .navbar-toggle{
+
+
+    text-align: center;
+
+      .icon-bar{
+        display: none;
+      }
+      .menubox {
+        margin: -10px 0 0 0 ;
+        text-transform: uppercase;
+        font-size: 10px;
+
+        i{
+          padding-left: 0;
+        }
+
+      }
+      .openMenu{
+        display: none;
+        span{
+          font-size: 25px;
+          font-weight: bold;
+          display: block;
+
+          i{
+            color: #fff;
+          }
+
+        }
+      }
+      .closeMenu{
+        display: block;
+        span{
+          font-size: 25px;
+          font-weight: bold;
+          display: block;
+
+          i{
+            color: #fff;
+          }
+
+        }
+      }
+      &.collapsed{
+
+        .icon-bar{
+        background: #fff;
+        width: 100%;
+        display: block;
+        &+.icon-bar{
+          margin-top: 5px
+        }
+      }
+      .openMenu{
+        display: block;
+      }
+      .closeMenu{
+        display: none;
+      }
+    }
+  }
+  #menu{
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    margin-top: 0;
+    box-sizing: border-box;
+    margin: 0;
+    li{
+      display: block;
+      border-bottom: 2px solid #dcdcdc;
+      padding: 10px 0;
+      span{
+        display: inline-block;
+        margin-left: 5px;
+      }
+      a{
+        padding: 5px 0;
+        font-size: 18px;
+        border-bottom: none;
+
+        @include breakpoint("mobile") {
+          font-size: 26px; //14px
+          line-height: 28px;
+        }
+
+
+
+      }
+      .active{
+        border-bottom: none;
+        border-right: 8px solid #ff8000;
+      }
+      &:last-child{
+        border-bottom: none;
+        padding: 2px 0;
+        a{
+          color: #7f7f83;
+          font-size: 14px;
+          padding: 0;
+        }
+      }
+      &:nth-child(5){
+        border-bottom: none;
+        padding: 10px 0 0 0;
+        a{
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.hero-mobile {
+  padding-top: 55px;
+  background-color: white;
+
+  @include breakpoint("desktop") {
+    display: none;
+  }
+
+
+  .hero-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: $color-blue;
+    font-size: 26px;
+    text-transform: uppercase;
+    line-height: 34px;
+    font-weight: bold;
+    padding-right: 20px;
+    margin: 25px;
+  }
+
+
+
+  .cta-button {
+    background-color: #40b6e5;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    text-Transform: Uppercase;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 25px;
+
+
+    &:hover {
+      background-color: $color-blue;
+    }
+
+    i {
+      color: #fff;
+      font-size: 20px;
+    }
+
+
+
+  }
+
+
+
+}
+
+
+
+.horizontal-style {
+
+
+  @include breakpoint("desktop") {
+
+
+    display: table;
+    width: 100%;
+
+    .fw {
+      display: table-cell !important;
+      float: none;
+    }
+
+    a {
+    text-align: center;
+    display: inline-block !important;
+    }
+
+
+  }
+
+
+
+}
